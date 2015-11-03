@@ -68,7 +68,7 @@ body {
 /*Landing*/
 
 #landing {
-	height: 95vh;
+	min-height: 95vh;
 }
 
 header {
@@ -91,5 +91,48 @@ header {
 	text-align: center;
 	margin-top: 2vh;
 }
+
+/*Bio*/
+
+#bio {
+	min-height: 100vh;
+	background-image: url("../images/greentab.png");
+	background-repeat: no-repeat;
+}
+
+.content {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bio h1 {
+	color: #85CC29;
+	font-size: 20vh;
+	text-align: center;
+	padding-top: 8vh;
+}
+
+#bio p {
+	text-align: center;
+	color: #FFF;
+
+}
+
+.membercard {
+	max-width: 30%;
+	min-height: 60vh;
+	margin: 30vh auto;
+
+}
+
+#photos {
+	width: 365px;
+	margin: auto;
+}
+
+
+
+
 
 
