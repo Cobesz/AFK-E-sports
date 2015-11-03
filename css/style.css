@@ -95,7 +95,7 @@ header {
 /*Bio*/
 
 #bio {
-	min-height: 100vh;
+	min-height: 95vh;
 	background-image: url("../images/greentab.png");
 	background-repeat: no-repeat;
 }
@@ -119,6 +119,8 @@ header {
 
 }
 
+/*Carousel*/
+
 .membercard {
 	max-width: 30%;
 	min-height: 60vh;
@@ -131,8 +133,17 @@ header {
 	margin: auto;
 }
 
+.glyphicon-chevron-left {
+	background-image: url("../images/arrowleft.png");
+}
 
+/*Contact*/
 
+#contact {
+	min-height: 95vh;
+	background-image: url("../images/orangetab.png");
+	background-repeat: no-repeat;
+}
 
 
 
