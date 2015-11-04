@@ -36,7 +36,6 @@ body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    	font-weight: 300;
 	background-image: url("../images/background.png");
-
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +53,18 @@ table {
 	border-spacing: 0;
 }
 
+/***********************************************
+Start Hackzz
+***********************************************/
+
+/* Fix:; width and center image on bigger screens. */
+.bgimage{
+    background-size: 100% auto;
+}
+
+/***********************************************
+End Hackzz
+***********************************************/
 
 /*Landing*/
 
@@ -117,7 +128,6 @@ header {
 .membercard {
 	min-height: 60vh;
 	margin: 35vh auto 5vh;
-
 }
 
 #photos {
@@ -189,7 +199,7 @@ form {
     margin-left:auto;
     margin-right:auto;
     width: 75vh;
-    height: 333px;
+    height: 350px;
     padding:30px;
     border: 1px solid rgba(0,0,0,.2);
     -moz-border-radius: 5px;
@@ -206,7 +216,7 @@ form {
 
 textarea{
 	background: rgba(188,48,13,.2) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px; 
-    width: 75vh;
+    width: 68vh;
     height: 110px;
     border: 1px solid rgba(188,48,13,.2);
     -moz-border-radius: 4px;
@@ -227,7 +237,7 @@ textarea{
 }
 
 input {
-    width: 75vh;
+    width: 68vh;
     height: 48px;
     border: 2px solid rgba(188,48,13,.2);
     -moz-border-radius: 4px;
