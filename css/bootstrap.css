@@ -6437,7 +6437,7 @@ button.close {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -6503,7 +6503,7 @@ button.close {
     padding-bottom: 30px;
   }
   .carousel-indicators {
-    bottom: 20px;
+    bottom: 5px;
   }
 }
 .clearfix:before,
