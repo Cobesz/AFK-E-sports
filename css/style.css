@@ -130,14 +130,22 @@ nav {
 }
 
 nav li {
-margin-bottom: 3vh;
+    margin-bottom: 3vh;
 }
 
 nav a {
 	list-style: none;
-	color: #77BD24;
+	color: rgba(120,189,36,0.5);
+    /*margin-right: 1vw;*/
 }
 
+nav a:visited {
+    color: rgba(120,189,36,1);
+}
+
+nav span {
+    margin-left: 1vw;
+}
 /*Bio*/
 
 #bio {
@@ -182,7 +190,7 @@ nav a {
 
 .box {
 	width: 365px;
-	min-height: 540px;
+	min-height: 90vh;
 	background-color: rgba(20,167,225,.1);
 }
 
@@ -206,12 +214,23 @@ nav a {
 
 #description {
 	text-align: left!important;
+    padding-bottom: 5vh;
 }
 /*Contact*/
 
 #contact {
+<<<<<<< HEAD
 	min-height: 45vh;
 	background-image: url("../images/contactbanner.png");
+=======
+<<<<<<< HEAD
+	min-height: 70vh;
+	/*background-image: url("../images/orangetab.png");*/
+/*=======*/
+	/*min-height: 45vh;*/
+	background-image: url("../images/contactbanner.png");
+/*>>>>>>> sheik*/
+>>>>>>> master
 	background-repeat: no-repeat;
 
 }
@@ -231,6 +250,7 @@ nav a {
 	text-align: center;
 	color: #FFF;
 	margin-top: 2vh;
+    min-height: 45vh;
 
 }
 
@@ -256,14 +276,17 @@ form {
     background: rgba(0, 0, 0, 0.5); 
     -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
     -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
-    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    border: 2px solid rgba(203,68,6,.5);
+    box-shadow: 0 0 10px rgba(203,68,6,1);
+
 }
 
 textarea{
-	background: rgba(188,48,13,.2) no-repeat scroll 16px 16px; 
+	background: rgba(188,48,13,0) no-repeat scroll 16px 16px; 
     width: 68vh;
     height: 110px;
-    border: 2px solid rgba(188,48,13,.2);
+    border: 2px solid rgba(203,68,6,.5);
+    box-shadow: 0 0 10px rgba(203,68,6,1);
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -284,7 +307,7 @@ textarea{
 input {
     width: 68vh;
     height: 48px;
-    border: 0px solid rgba(188,48,13,.2);
+    border: 0px solid rgba(203,68,6,.2);
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -305,17 +328,23 @@ input[type=submit] {
 }
 
 input.name {
-	  background: rgba(188,48,13,.2) no-repeat scroll 16px 16px; 
+	  background: rgba(188,48,13,0) no-repeat scroll 16px 16px; 
+      border: 2px solid rgba(203,68,6,.5);
+      box-shadow: 0 0 10px rgba(203,68,6,1);
 	  padding-left:45px;
 }
 
 input.email {
-	  background: rgba(188,48,13,.2) no-repeat scroll 16px 20px;
+	  background: rgba(188,48,13,0) no-repeat scroll 16px 20px;
+      border: 2px solid rgba(203,68,6,.5);
+      box-shadow: 0 0 10px rgba(203,68,6,1);
 	  padding-left:45px;
 }
 
 input.message {
-	  background: rgba(188,48,13,.2) no-repeat scroll 16px 16px;
+	  background: rgba(188,48,13,0) no-repeat scroll 16px 16px;
+      border: 2px solid rgba(203,68,6,.5);
+      box-shadow: 0 0 10px rgba(203,68,6,1);
 	  padding-left:45px;
 }
 
@@ -336,37 +365,42 @@ input.message {
 }
 
 input:focus, textarea:focus { 
-    background-color: rgba(188,48,13,.2);
-    -moz-box-shadow: 0 0 5px 1px rgba(188,48,13,.2);
-    -webkit-box-shadow: 0 0 5px 1px rgba(188,48,13,.2);
-    box-shadow: 0 0 5px 1px rgba(188,48,13,.2);   
-    border: 2px solid rgba(188,48,13,.5);
+    /*background-color: rgba(188,48,13,.2);*/
+    -moz-box-shadow: 0 0 5px 1px rgba(203,68,6,.2);
+    -webkit-box-shadow: 0 0 5px 1px rgba(203,68,6,.2);
+    box-shadow: 0 0 10px rgba(203,68,6,1);   
+    border: 2px solid rgba(203,68,6,.8);
     overflow: hidden;
     outline: none;
 }
 
 .btn {
-	width: 138px;
+    margin: 0 auto;
+	width: 30vh;
 	height: 44px;
+    text-align: center;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
-	float:right;
-    border: 1px solid rgba(188,48,13,.2);
-    background: rgba(188,48,13,.2) no-repeat scroll 16px 20px;
+	/*float:right;*/
+    border: 1px solid rgba(203,68,6,.5);
+    box-shadow: 0 0 10px rgba(203,68,6,1);
+    background: rgba(188,48,13,0) no-repeat scroll 16px 20px;
     
 }
 
 .btn:hover {
     
     text-shadow: #333333 0 1px 0;
-    background: rgba(188,48,13,.5);
+    background: rgba(203,68,6,.5);
+    box-shadow: 0 0 10px rgba(203,68,6,1);
     color: #fff;
  }
 
 .btn:active {
     margin-top:1px;
     text-shadow: #333333 0 -1px 0;
-    border: 1px solid #253737;
-    background: rgba(188,48,13,.8);
+    border: 1px solid rgba(203,68,6,1);
+    box-shadow: 0 0 10px rgba(203,68,6,1);
+    background: rgba(203,68,6,.8);
 }
