@@ -63,7 +63,7 @@ Start Hackzz
 }
 
 /* Fix: scrolling menu. */
-#stickyheader{
+nav{
     position: fixed;
     top: 50%;
     right: 0;

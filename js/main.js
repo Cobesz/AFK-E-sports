@@ -1,38 +1,16 @@
-    
-    console.log("Started: main.js");
-    
-    $(".stickyheader").find("a").click(function(e) {
-    e.preventDefault();
+$(document).ready(function() {
 
-    var section = $(this).attr("href");
-    $("html, body").animate({
-        scrollTop: $(section).offset().top
+    // Animate scrolling with navigation using OnePageNav.
+    $('#nav').onePageNav({
+        currentClass: 'current',
+        changeHash: false,
+        scrollSpeed: 750
     });
 
+    // Animate scrolling with subscribe using own code.
+    $("#subscribe").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+        }, 750);
+    });
 });
-
-(function ($)
-{
-    var $window = $(window);
-    speed = 10;
-
-     function init()
-     {
-        $('.page').each(function ()
-        {
-            var $bgobj = $(this);
-            $window.on('scroll', pageScrollHandler.bind(this, $bgobj));
-        });
-     }
-
-     function pageScrollHandler($bgObj)
-     {
-        var yPos = -($window.scrollTop() / speed);
-        var coords = '50% ' + yPos + 'px';
-     
-        $bgObj.css({backgroundPosition: coords});
-    }
-
-
-    $(init);
-})(jQuery);
