@@ -7,13 +7,6 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href="dist/css/flat-ui.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css"/>
-
-	<script type="text/javascript" src="js/libraries/jquery-2.1.4.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/stickynav.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </head>
 
 <body>
@@ -21,11 +14,18 @@
 	<header>
 		<img src="./images/logo.png"/>
 	</header>
+	<nav id="stickyheader" class="stickyheader">
+		<ul>
+			<a href="#landing"><li>Home</li></a>
+			<a href="#bio"><li>Bio</li></a>
+			<a href="#contact"><li>Contact</li></a>
+		</ul>
+	</nav>
 	<p>lorem ipsum dolor sit amet, consectetur adipiscing elit. pellentesque eu facilisis elit. 
 	sed dictum malesuada tellus, non blandit justo pretium non. 
 	</p>
-	<div id="subscribe">
-		<a href="#">
+	<div id="subscribe" class="stickyheader">
+		<a href="#contact">
 			<img src="./images/subscribe.png"/>
 		</a>
 	</div>
@@ -137,6 +137,12 @@
     <input name="submit" class="btn" type="submit" value="Send" />
 </form>
 </div>
+
+<script type="text/javascript" src="js/libraries/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/stickynav.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
