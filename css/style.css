@@ -220,12 +220,17 @@ nav span {
 
 #contact {
 <<<<<<< HEAD
+	min-height: 45vh;
+	background-image: url("../images/contactbanner.png");
+=======
+<<<<<<< HEAD
 	min-height: 70vh;
 	/*background-image: url("../images/orangetab.png");*/
 /*=======*/
 	/*min-height: 45vh;*/
 	background-image: url("../images/contactbanner.png");
 /*>>>>>>> sheik*/
+>>>>>>> master
 	background-repeat: no-repeat;
 
 }
