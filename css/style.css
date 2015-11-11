@@ -57,9 +57,35 @@ table {
 Start Hackzz
 ***********************************************/
 
-/* Fix:; width and center image on bigger screens. */
+/* Fix: width and center image on bigger screens. */
 .bgimage{
     background-size: 100% auto;
+}
+
+/* Fix: scrolling menu. */
+#stickyheader{
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+
+/* Test for javascript, needs to be replaced with images */
+.selected{
+    background-image: url('../images/selectorfilled.png');
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    width: 22px;
+    height: 22px;
+}
+
+.unselected{
+    background-image: url('../images/selectorempty.png');
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    width: 22px;
+    height: 22px;
 }
 
 /***********************************************
@@ -185,7 +211,7 @@ nav a {
 
 #contact {
 	min-height: 45vh;
-	background-image: url("../images/orangetab.png");
+	background-image: url("../images/contactbanner.png");
 	background-repeat: no-repeat;
 
 }
